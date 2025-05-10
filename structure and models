@@ -1,0 +1,21 @@
+📁 Enhancing-Road-Safety/
+├── 📂 STRUCTURE AND MODELS/
+│   ├── 📜 structure for AI       ← Overview of architecture
+│   └── 📂 src/
+│       ├── 📜 data_collection.py       ← Collect raw traffic data
+│       ├── 📜 data_preprocessing.py    ← Clean & format data
+│       ├── 📜 feature_engineering.py   ← Extract key features
+│       ├── 📜 model_training.py        ← Train ML models (e.g., RF, SVM)
+│       ├── 📜 evaluation_results.py    ← Evaluate models
+│       └── 📜 utils.py                 ← Helper functions
+│
+├── 📂 frontend nd backend API/
+│   ├── 📜 app.py                ← API layer (e.g., Flask/FastAPI)
+│   ├── 📂 templates/            ← HTML (if using Flask)
+│   └── 📂 static/               ← CSS/JS files
+│
+├── 📜 Dataset link              ← External or sample dataset link
+├── 📜 KEY FILES EXPLAINED       ← Description of project files
+├── 📜 README.md                 ← Project overview + instructions
+├── 📜 .gitignore                ← Ignore patterns for Git
+└── 📜 requirements.txt          ← Python dependencies
