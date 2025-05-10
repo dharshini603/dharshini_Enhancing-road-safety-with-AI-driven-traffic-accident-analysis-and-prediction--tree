@@ -1,0 +1,7 @@
+| Tool                     | Use                                |
+| ------------------------ | ---------------------------------- |
+| **Python**               | Main programming language          |
+| `pandas`                 | Data handling (tables, CSVs)       |
+| `scikit-learn`           | Machine learning (training models) |
+| `matplotlib`             | Graphs and charts                  |
+| `streamlit` *(optional)* | Simple user interface (web app)    |
