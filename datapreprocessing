@@ -1,0 +1,24 @@
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import StandardScaler, LabelEncoder
+
+# Sample data
+data = {
+    'Severity': [2, 3, 2, 4, 1],
+    'City': ['Houston', 'Austin', 'Dallas', 'Houston', 'San Antonio'],
+    'Temperature(F)': [75.0, 80.0, np.nan, 60.0, 70.0],
+    'Humidity(%)': [50, 55, 60, 65, np.nan],
+    'Weather_Condition': ['Clear', 'Rain', 'Clear', 'Fog', 'Rain']
+}
+
+df = pd.DataFrame(data)
+
+# Preprocessing
+df.fillna(df.mean(numeric_only=True), inplace=True)
+df.drop_duplicates(inplace=True)
+df['City'] = LabelEncoder().fit_transform(df['City'])
+df = pd.get_dummies(df, columns=['Weather_Condition'], drop_first=True)
+df[['Temperature(F)', 'Humidity(%)']] = StandardScaler().fit_transform(df[['Temperature(F)', 'Humidity(%)']])
+
+# Output
+print(df.head())
