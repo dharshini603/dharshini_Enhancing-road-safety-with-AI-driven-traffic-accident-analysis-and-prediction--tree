@@ -1,0 +1,49 @@
+AI-Traffic-Accident-Analysis/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+├── requirements.txt
+├── environment.yml
+├── config.yaml
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── external/
+│
+├── notebooks/
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_feature_engineering.ipynb
+│   ├── 03_model_training.ipynb
+│   └── 04_model_evaluation.ipynb
+│
+├── src/
+│   ├── _init_.py
+│   ├── data_preprocessing.py
+│   ├── feature_engineering.py
+│   ├── model.py
+│   ├── predict.py
+│   └── utils.py
+│
+├── models/
+│   ├── model.pkl
+│   └── model_metrics.json
+│
+├── reports/
+│   ├── figures/
+│   └── final_report.pdf
+│
+├── tests/
+│   ├── test_data_preprocessing.py
+│   ├── test_model.py
+│   └── test_predict.py
+│
+└── dashboard/
+    ├── app.py
+    ├── layout.py
+    ├── callbacks.py
+    └── assets/
+
+
+---
