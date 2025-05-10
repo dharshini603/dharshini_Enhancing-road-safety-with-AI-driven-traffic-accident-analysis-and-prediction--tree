@@ -1,0 +1,32 @@
+# app.py
+import streamlit as st
+import joblib
+
+# Load your trained model
+model = joblib.load("xgboost_accident_model.pkl")
+
+st.title("Traffic Accident Severity Predictor 🚦")
+
+# User input fields
+col1, col2 = st.columns(2)
+
+with col1:
+    temperature = st.number_input("Temperature (°F)", 30, 120, 70)
+    humidity = st.slider("Humidity (%)", 0, 100, 50)
+    weather = st.selectbox("Weather Condition", ["Clear", "Rain", "Fog", "Snow"])
+    rush_hour = st.checkbox("Is it Rush Hour?")
+
+with col2:
+    visibility = st.slider("Visibility (miles)", 0, 10, 5)
+    wind_speed = st.number_input("Wind Speed (mph)", 0, 50, 10)
+    traffic_signal = st.checkbox("Traffic Signal Present?")
+    junction = st.checkbox("At a Junction?")
+
+# Feature conversion (simplified)
+input_data = [[temperature, humidity, visibility, wind_speed,
+               int(weather == "Rain"), int(weather == "Fog"), int(weather == "Snow"),
+               int(rush_hour), int(traffic_signal), int(junction)]]
+
+if st.button("Predict Severity"):
+    prediction = model.predict(input_data)[0]
+    st.success(f"Predicted Severity Level: {prediction}")
