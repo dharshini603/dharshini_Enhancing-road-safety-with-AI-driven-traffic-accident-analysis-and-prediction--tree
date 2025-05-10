@@ -1,4 +1,3 @@
-# dharshini_Enhancing-road-safety-with-AI-driven-traffic-accident-analysis-and-prediction--tree
 Enhancing Road Safety with AI-Driven Traffic Accident Analysis and Prediction
 This project aims to improve road safety by leveraging artificial intelligence and machine learning techniques to analyze traffic accident data and predict high-risk situations. By identifying patterns and trends in historical crash data, the system helps stakeholders—such as city planners, traffic authorities, and autonomous vehicle systems—take proactive steps to prevent future accidents
 
