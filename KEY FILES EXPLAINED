@@ -1,0 +1,20 @@
+
+README.md: Project overview, features, usage instructions.
+
+requirements.txt / environment.yml: Python dependencies.
+
+config.yaml: Configuration (data paths, model parameters).
+
+data/: Raw and processed datasets.
+
+notebooks/: Step-by-step analysis in Jupyter notebooks.
+
+src/: Core logic of the pipeline – data handling, modeling, predictions.
+
+models/: Trained ML models and performance metrics.
+
+reports/: Visualizations and documentation outputs.
+
+tests/: Unit and integration tests.
+
+dashboard/: (Optional) Dash or Streamlit app to visualize predictions.
