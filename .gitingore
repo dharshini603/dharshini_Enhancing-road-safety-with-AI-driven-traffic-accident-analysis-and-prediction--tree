@@ -1,0 +1,89 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm / VSCode
+.idea/
+.vscode/
+
+# Streamlit cache and logs
+.streamlit/
+
+# Flask cache
+instance/
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables
+.env
+*.env
+
+# Dataset files
+*.csv
+*.xlsx
+*.json
+*.zip
+*.tar.gz
+*.pkl
+
+# Model files
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.sav
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Pytest
+.cache
+
+# Deployment artifacts
+*.db
+*.sqlite3
+*.log
